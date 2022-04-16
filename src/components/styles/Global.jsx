@@ -10,7 +10,17 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body,
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
+
   h1,
   h2,
   h3,
