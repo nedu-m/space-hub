@@ -4,6 +4,7 @@ import "@fontsource/bellefair";
 
 export const theme = {
   breakpoints: {
+    sm: "325px",
     md: "768px",
     lg: "1024px",
   },

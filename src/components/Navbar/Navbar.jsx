@@ -30,6 +30,24 @@ const Navbar = () => {
               Home
             </NavigationLink>
           </NavigationList>
+          <NavigationList>
+            <NavigationLink to="/destination" onClick={toggleHandler}>
+              <NavigationNum>01</NavigationNum>
+              Destination
+            </NavigationLink>
+          </NavigationList>
+          <NavigationList>
+            <NavigationLink to="/crew" onClick={toggleHandler}>
+              <NavigationNum>02</NavigationNum>
+              Crew
+            </NavigationLink>
+          </NavigationList>
+          <NavigationList>
+            <NavigationLink to="/technology" onClick={toggleHandler}>
+              <NavigationNum>03</NavigationNum>
+              Technology
+            </NavigationLink>
+          </NavigationList>
           </NavigationLists>
       </Navigation>
     </StyledNavbar>
