@@ -21,6 +21,17 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <Logo src={logo} alt="space tourism" />
+      <MenuBtn toggleMenu={toggleMenu} onClick={handleMenu}></MenuBtn>
+      <Navigation>
+        <NavigationLists toggleMenu={toggleMenu}>
+          <NavigationList>
+            {/* <NavigationLink to="/" onClick={handleMenu}>
+              <NavigationNum>00</NavigationNum>
+              Home
+            </NavigationLink> */}
+          </NavigationList>
+        </NavigationLists>
+      </Navigation>
     </StyledNavbar>
   );
 
