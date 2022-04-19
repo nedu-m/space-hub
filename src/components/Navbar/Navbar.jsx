@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react"; 
 import {
   Logo,
   MenuBtn,
@@ -9,32 +9,31 @@ import {
   NavigationNum,
   StyledNavbar,
 } from "../../styles/StyledNavbar/Navbar.styled";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/shared/logo.svg";
 
-const Navbar = () => { 
+const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const handleMenu = () => { 
+  const toggleHandler = () => {
     setToggleMenu(!toggleMenu);
   };
 
   return (
     <StyledNavbar>
-      <Logo src={logo} alt="space tourism" />
-      <MenuBtn toggleMenu={toggleMenu} onClick={handleMenu}></MenuBtn>
+      <Logo src={logo} alt="space tourism logo" />
+      <MenuBtn toggleMenu={toggleMenu} onClick={toggleHandler}></MenuBtn>
       <Navigation>
         <NavigationLists toggleMenu={toggleMenu}>
           <NavigationList>
-            {/* <NavigationLink to="/" onClick={handleMenu}>
+            <NavigationLink to="/" onClick={toggleHandler}>
               <NavigationNum>00</NavigationNum>
               Home
-            </NavigationLink> */}
+            </NavigationLink>
           </NavigationList>
-        </NavigationLists>
+          </NavigationLists>
       </Navigation>
     </StyledNavbar>
   );
-
 };
 
 export default Navbar;

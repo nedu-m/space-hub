@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
 import Crew from "./pages/Crew/Crew";
 import Destination from "./pages/Destination/Destination";
+import Home from "./pages/Home/Home";
 import Technology from "./pages/Technology/Technology";
 import GlobalStyle from "./styles/GlobalStyles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
@@ -13,11 +13,11 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Navbar />
         <BrowserRouter>
+        <Navbar />
           <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
         </BrowserRouter>
       </ThemeProvider>
     </>
