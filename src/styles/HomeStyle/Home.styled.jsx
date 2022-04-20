@@ -64,12 +64,22 @@ export const HomeBigText = styled.span`
   color: ${props => props.theme.colors.light};
 `;
 
-export const HomeDiv = styled.div``;
+export const HomeDiv = styled.div`
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding-top: 30%;
+  }
+`;
 
 export const HomeSubtitle = styled.p`
   font-family: ${props => props.theme.fonts.cond};
   color: ${props => props.theme.colors.light};
   letter-spacing: 1.1px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tb}) {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
 `;
 
 export const HomeCTA = styled.div``;

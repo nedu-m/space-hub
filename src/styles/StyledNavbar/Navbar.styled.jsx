@@ -35,6 +35,10 @@ export const Navigation = styled.nav`
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     order: 2;
   }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    order: 2;
+  }
 `;
 
 export const NavigationLists = styled.ul`

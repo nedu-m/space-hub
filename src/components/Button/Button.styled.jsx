@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const StyledButton = styled(Link)`
   font-size: 2rem;
@@ -8,32 +8,31 @@ export const StyledButton = styled(Link)`
   display: inline-grid;
   place-items: center;
   padding: 0 2em;
+  border-radius: 50%;
+  aspect-ratio: 1;
   text-decoration: none;
-  background-color: ${props => props.theme.colors.white};
-  color: ${props => props.theme.colors.white};
-  font-family: ${props => props.theme.fonts.cond};
   text-transform: uppercase;
+  font-family: ${({ theme }) => theme.fonts.cond};
+  background-color: ${({ theme }) => theme.colors.light};
+  color: ${({ theme}) => theme.colors.black};
   cursor: pointer;
-
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    background: ${props => props.theme.colors.white};
+    background: ${({ theme }) => theme.colors.light} / 0.01;
     border-radius: 50%;
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    transition: opacity 300ms linear, transform 500ms ease-in-out;
   }
-
   &:hover::after,
   &:focus::after {
     opacity: 1;
     transform: scale(1.5);
   }
-
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     font-size: 1.95em;
   }
 `;

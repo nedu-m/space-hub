@@ -1,5 +1,5 @@
 import React from 'react';
-// import { StyledButton } from '../../components/Button/Button.styled';
+import { StyledButton } from '../../components/Button/Button.styled';
 import {
   HomeDiv,
   HomeTitle,
@@ -28,7 +28,7 @@ const Home = () => {
           </HomeSubtitle>
         </HomeDiv>
         <HomeCTA>
-          {/* <StyledButton>Explore</StyledButton> */}
+          <StyledButton to="/destination">Explore</StyledButton>
         </HomeCTA>
       </HomeContainer>
     </StyledHome>
