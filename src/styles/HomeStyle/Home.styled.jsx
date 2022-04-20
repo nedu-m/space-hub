@@ -68,6 +68,11 @@ export const HomeDiv = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding-top: 30%;
   }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tb}) {
+    padding-top: 20%;
+    padding-bottom: 5%;
+  }
 `;
 
 export const HomeSubtitle = styled.p`
