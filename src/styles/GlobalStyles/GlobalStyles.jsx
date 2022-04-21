@@ -58,6 +58,7 @@ p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  white-space: 0;
 }
 
 body {

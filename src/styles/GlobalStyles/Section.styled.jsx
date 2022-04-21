@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const SectionTitle = styled.h1`
-  font-family: var(--ff-cond);
-  font-size: var(--fs-500);
+  font-family: ${({ theme }) => theme.fonts.cond};
+  font-size: ${({ theme }) => theme.fonts.v};
   text-transform: uppercase;
   letter-spacing: 4.75px;
   font-weight: 400;
+  color: ${({ theme }) => theme.colors.light};
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     margin-top: 2rem;
@@ -14,8 +15,8 @@ export const SectionTitle = styled.h1`
 `;
 
 export const SectionTitleNum = styled.span`
-  color: var(--color-white);
-  font-family: var(--ff-bel);
+  color: ${({ theme }) => theme.colors.light};
+  font-family: ${({ theme }) => theme.fonts.bell};
   font-weight: 700;
   margin-right: 0.5rem;
 `;
