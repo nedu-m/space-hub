@@ -79,8 +79,9 @@ export const HomeSubtitle = styled.p`
   font-family: ${props => props.theme.fonts.cond};
   color: ${props => props.theme.colors.light};
   letter-spacing: 1.1px;
+  text-align: center;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.tb}) {
+  @media (width: ${({ theme }) => theme.breakpoints.tb}) {
     text-align: center;
     width: 50%;
     margin: 0 auto;

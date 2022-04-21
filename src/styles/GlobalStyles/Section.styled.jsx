@@ -13,7 +13,7 @@ export const SectionTitle = styled.h1`
   }
 `;
 
-export const SectionTitleNumber = styled.span`
+export const SectionTitleNum = styled.span`
   color: var(--color-white);
   font-family: var(--ff-bel);
   font-weight: 700;
