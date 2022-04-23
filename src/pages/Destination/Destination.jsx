@@ -34,7 +34,7 @@ const Destination = () => {
     <StyledDestination>
       <DestinationMain>
         <SectionTitle>
-          <SectionTitleNum>01.</SectionTitleNum>
+          <SectionTitleNum>01</SectionTitleNum>
           Pick your destination
         </SectionTitle>
 

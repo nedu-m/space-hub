@@ -15,8 +15,8 @@ export const SectionTitle = styled.h1`
 `;
 
 export const SectionTitleNum = styled.span`
-  color: ${({ theme }) => theme.colors.light};
-  font-family: ${({ theme }) => theme.fonts.bell};
+  color: rgba(255, 255, 255, 0.5);
+  font-family: ${({ theme }) => theme.fonts.cond};
   font-weight: 700;
   margin-right: 0.5rem;
 `;

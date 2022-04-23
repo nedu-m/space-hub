@@ -33,7 +33,7 @@ const Crew = () => {
     <StyledCrew>
       <CrewMain>
     <SectionTitle>
-      <SectionTitleNum>01</SectionTitleNum>
+      <SectionTitleNum>02</SectionTitleNum>
       Meet your crew
     </SectionTitle>
 
